@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'SP';
-    src: url('/fonts/sweynheim-pannartz.subiaco-proto-roman-120r.otf') format('opentype');
+    src: url('/sultans-archive/fonts/sweynheim-pannartz.subiaco-proto-roman-120r.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-feature-settings:
@@ -50,7 +50,7 @@ body {
 
     color: #C1BBAB;
 
-    background-image: url('images/ui/map.jpg');
+    background-image: url('/sultans-archive/images/ui/map.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -93,7 +93,7 @@ body {
     background: transparent;
     color: white;
 
-    border-image-source: url("/images/ui/banner_border.png");
+    border-image-source: url("/sultans-archive/images/ui/banner_border.png");
     border-image-slice: 309 450 309 100;
     border-image-width: 309px 450px 309px 100px;
     border-image-outset: 0;
@@ -127,7 +127,7 @@ body {
     min-width: 0;
     background-color: black;
 
-    border-image-source: url("/images/ui/border.png");
+    border-image-source: url("/sultans-archive/images/ui/border.png");
     border-image-slice: 9;
     border-image-width: 2px;
     border-image-outset: 0;
@@ -175,7 +175,7 @@ body {
 
     height: 10rem;
     
-    border-image: url('/images/ui/search_border.png');
+    border-image: url('/sultans-archive/images/ui/search_border.png');
     border-image-slice: 91 100 91 100;
     border-image-width: 91px 100px 91px 100px;
     border-image-repeat: stretch round;
@@ -225,7 +225,7 @@ body {
     line-height: 10rem;  
     padding-left: 6rem;
 
-    border-image: url('/images/ui/search_border.png');
+    border-image: url('/sultans-archive/images/ui/search_border.png');
     border-image-slice: 91 100 91 100;
     border-image-width: 91px 100px 91px 100px;
     border-image-repeat: stretch round;
@@ -271,7 +271,7 @@ body {
     text-align: left;
 
     border: solid transparent;
-    border-image-source: url("/images/ui/border.png");
+    border-image-source: url("/sultans-archive/images/ui/border.png");
     border-image-slice: 9;
     border-image-width: 2px;
     border-image-outset: 0;
@@ -307,7 +307,7 @@ body {
     background-color: black;
 
     border: solid transparent;
-    border-image-source: url("/images/ui/border.png");
+    border-image-source: url("/sultans-archive/images/ui/border.png");
     border-image-slice: 9;
     border-image-width: 2px;
     border-image-outset: 0;
@@ -350,7 +350,7 @@ body {
     background-color: black;
     border-radius: 200px;
 
-    border-image-source: url("/images/ui/sidebar_border.png");
+    border-image-source: url("/sultans-archive/images/ui/sidebar_border.png");
     border-image-slice: 102 82 108 0;
     border-image-width: 102px 82px 108px 0px;
     border-image-outset: 12px 6px 20px 0px;
@@ -401,7 +401,7 @@ body {
     text-shadow: 2px 1px 0 #886C2B; 
     color: #EEDB92;
 
-    background: url("/images/ui/bag_change_btn_right.png") left center / 1rem 1rem no-repeat;
+    background: url("/sultans-archive/images/ui/bag_change_btn_right.png") left center / 1rem 1rem no-repeat;
 }
 
 .sidebar summary::-webkit-details-marker {
@@ -409,7 +409,7 @@ body {
 }
 
 .sidebar details[open] > summary {
-    background-image: url("/images/ui/bag_change_btn.png");
+    background-image: url("/sultans-archive/images/ui/bag_change_btn.png");
 }
 
 .sidebar .dataset-list a.active {
@@ -467,7 +467,7 @@ body {
 }
 
 .content-frame {
-    border-image-source: url("/images/ui/main_bg.webp");
+    border-image-source: url("/sultans-archive/images/ui/main_bg.webp");
     border-image-slice: 102 82 108 83;
     border-image-width: 102px 82px 108px 83px;
     border-image-outset: 12px 6px 20px 6px;
@@ -551,7 +551,7 @@ body {
     width: 15px;
     height: 15px;
 
-    background: url("/images/ui/page_yellow.png") center / contain no-repeat;
+    background: url("/sultans-archive/images/ui/page_yellow.png") center / contain no-repeat;
 }
 
 /* ===========================
@@ -825,11 +825,11 @@ body {
 }
 
 .image-version-button[data-direction="-1"] {
-    background-image: url("/images/ui/page_left.png");
+    background-image: url("/sultans-archive/images/ui/page_left.png");
 }
 
 .image-version-button[data-direction="1"] {
-    background-image: url("/images/ui/page_right.png");
+    background-image: url("/sultans-archive/images/ui/page_right.png");
 }
 
 .image-version-label {
@@ -841,7 +841,7 @@ body {
     width: 96px;
     padding-top: 5px;
 
-    border-image-source: url("/images/ui/border.png");
+    border-image-source: url("/sultans-archive/images/ui/border.png");
     border-image-slice: 9;
     border-image-width: 2px;
     border-image-outset: 0;
@@ -861,7 +861,7 @@ body {
 
     text-align: center;
 
-    background-image: url('/images/ui/footer.webp');
+    background-image: url('/sultans-archive/images/ui/footer.webp');
     color: white;
 }
 

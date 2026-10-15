@@ -1,4 +1,21 @@
-fetch(`/${window.location.pathname.split("/")[1]}/sidebar.html`)
+const BASE_PATH = "/sultans-archive";
+
+function withBasePath(path) {
+    return path.startsWith("/") ? `${BASE_PATH}${path}` : path;
+}
+
+function getSitePathParts() {
+    const pathname = window.location.pathname;
+    const sitePath = pathname === BASE_PATH
+        ? "/"
+        : pathname.startsWith(`${BASE_PATH}/`)
+            ? pathname.slice(BASE_PATH.length)
+            : pathname;
+
+    return sitePath.split("/").filter(Boolean);
+}
+
+fetch(withBasePath(`/${getSitePathParts()[0]}/sidebar.html`))
     .then(response => response.text())
     .then(html => {
         document.getElementById("sidebar").innerHTML = html;
@@ -6,7 +23,7 @@ fetch(`/${window.location.pathname.split("/")[1]}/sidebar.html`)
     .then(initSidebar);
 
 function initSidebar() {
-    const parts = window.location.pathname.split("/").filter(Boolean);
+    const parts = getSitePathParts();
     if (parts.length < 3) return;
 
     const [, category, id] = parts;
@@ -56,7 +73,7 @@ languageDropdown.querySelectorAll("[data-language]").forEach(link => {
         const language = link.dataset.language;
         const parts = window.location.pathname.split("/");
 
-        parts[1] = language;
+        parts[2] = language;
 
         window.location.href =
             parts.join("/") +
@@ -73,10 +90,10 @@ document.querySelector(".search-container")?.addEventListener("submit", event =>
         return;
     }
 
-    const language = window.location.pathname.split("/")[1];
+    const language = getSitePathParts()[0];
 
     window.location.href =
-        `/${language}/search?q=${encodeURIComponent(query)}`;
+        `${BASE_PATH}/${language}/search?q=${encodeURIComponent(query)}`;
 });
 
 async function performSearch() {
@@ -109,7 +126,7 @@ async function performSearch() {
             results.push({
                 id,
                 title: entry.title,
-                link: entry.link,
+                link: withBasePath(entry.link),
                 strings: matches
             });
         }
@@ -244,20 +261,20 @@ document.addEventListener("click", event => {
 
     image.dataset.version = version;
 
-    image.src = version === 0
+    image.src = withBasePath(version === 0
         ? image.dataset.original
-        : altImages[version - 1];
+        : altImages[version - 1]);
 
     const rarity = rarities[version];
 
-    background.src = `/images/bg/bg_${image.dataset.type}_${rarity}.png`;
+    background.src = withBasePath(`/images/bg/bg_${image.dataset.type}_${rarity}.png`);
     
 
     if (border) {
-        border.src = image.dataset.original;
+        border.src = withBasePath(image.dataset.original);
 
         if (version > 0) {
-            border.src = `/images/bg/bg_char_${rarity}_border.png`;
+            border.src = withBasePath(`/images/bg/bg_char_${rarity}_border.png`);
         }
     }
 
