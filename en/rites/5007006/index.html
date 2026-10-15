@@ -1,0 +1,926 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <title>Divide and Conquer | Sultan's Archive</title>
+
+            <meta name="description" content="Ever since that humiliating night in the woods, Nawfal has been the laughing-stock of the Sultan&#39;s court, and your audacious actions have left him entirely disheartened – now you have gained a Great Adversary who will go to great lengths to distress you.
+
+This time, you hear that Nawfal is attempting to recruit those close to you...">
+
+            <link rel="stylesheet" href="/styles.css">
+            <script src="/script.js" defer></script>
+        </head>
+
+        <body>
+
+            <header class="banner">
+
+                <a class="site-name" href="/en/">
+                    <img src="/images/ui/title.png">
+                </a>
+
+                <div class="header-controls">
+                    <div class="language-dropdown">
+                        <button class="language-dropdown-button" type="button">
+                            <span>English</span>
+                            <img src="/images/ui/bag_change_btn.png" alt="">
+                        </button>
+
+                        <div class="language-dropdown-menu">
+                            <a href="#" data-language="en">English</a>
+                            <a href="#" data-language="ja">Japanese</a>
+                            <a href="#" data-language="zhCN">Chinese Simp.</a>
+                            <a href="#" data-language="zhTW">Chinese Trad.</a>
+                        </div>
+                    </div>
+                    <form class="search-container" role="search">
+                        <input
+                            type="search"
+                            name="q"
+                            placeholder="Search..."
+                            autocomplete="off"
+                        >
+                        <button type="submit" class="search-button" aria-label="Search">
+                            <img src="/images/ui/search.png">
+                        </button>
+                    </form>
+                </div>
+            </header>
+
+            <div class="layout">
+
+                <aside class="sidebar" id="sidebar"></aside></aside>
+
+                <main class="content">
+                    <div class="content-frame">
+                        
+        <article class="entry">
+
+            <header class="entry-header">
+                <h1 class="entry-title"><span class="literal">Divide and Conquer</span></h1>
+            </header>
+
+            <div class="entry-content">
+
+                <div class="fields">
+                    
+        <section class="field">
+            <h2 class="field-label">ID:</h2>
+            <div class="field-value"><span class="literal">5007006</span></div>
+        </section>
+    
+
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value"><span class="literal">Ever since that humiliating night in the woods, Nawfal has been the laughing-stock of the Sultan&#39;s court, and your audacious actions have left him entirely disheartened – now you have gained a Great Adversary who will go to great lengths to distress you.
+
+This time, you hear that Nawfal is attempting to recruit those close to you...</span></div>
+        </section>
+    
+
+        <section class="field">
+            <h2 class="field-label">Template:</h2>
+            <div class="field-value"><a href="/en/templates/8000039/"><span class="literal"><i>Template 8000039</i></span></a></div>
+        </section>
+    
+
+        <section class="field">
+            <h2 class="field-label">Mark New Once Only?</h2>
+            <div class="field-value">No</div>
+        </section>
+    
+
+        <section class="field">
+            <h2 class="field-label">Duration:</h2>
+            <div class="field-value">1 Days</div>
+        </section>
+    
+
+        <section class="field">
+            <h2 class="field-label">Expire:</h2>
+            <div class="field-value">Never</div>
+        </section>
+    
+
+
+        <section class="field">
+            <h2 class="field-label">Auto Begin?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+
+        <section class="field">
+            <h2 class="field-label">Auto Finish?</h2>
+            <div class="field-value">No</div>
+        </section>
+    
+
+        <section class="field">
+            <h2 class="field-label">Location:</h2>
+            <div class="field-value">Map</div>
+        </section>
+    
+
+        <section class="field field-group">
+            <h2 class="field-label">Tag Tips:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Type:</h2>
+            <div class="field-value">Fight</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Tags:</h2>
+            <div class="field-value"><ul><li><a href="/en/tags/charm/"><span class="literal">Charisma</span></a></li><li><a href="/en/tags/conceal/"><span class="literal">Stealth</span></a></li></ul></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value">This is a Great Adversary ritual, it will periodically harm you.</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value">You need 1 Success to obstruct the plan.</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value">You need 3 Successes to reduce the opponent's advantage.</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value">You need 5 Successes to ruin the opponent.</div>
+        </section>
+    
+            </div>
+        </section>
+    
+
+        <section class="field field-collection">
+            <h2 class="field-label">Card Slots</h2>
+            <div class="field-items">
+                
+        <section class="field-item">
+            
+        <section class="field">
+            <h2 class="field-label">Slot 1</h2>
+            
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value"><span class="literal">He has become your great adversary.</span></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Attract Card?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Can be Empty?</h2>
+            <div class="field-value">No</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Is Opposing?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Requirements:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Card:</h2>
+            <div class="field-value"><a href="/en/cards/2000312/"><span class="literal">Nawfal</span></a></div>
+        </section>
+    
+            </div>
+        </section>
+    
+        </section>
+    
+        <section class="field-item">
+            
+        <section class="field">
+            <h2 class="field-label">Slot 2</h2>
+            
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value"><span class="literal">A group of zealous, mindless youths, Nawfal&#39;s admirers</span></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Attract Card?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Can be Empty?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Is Opposing?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Requirements:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Card:</h2>
+            <div class="field-value"><a href="/en/cards/2000567/"><span class="literal">Radical Order</span></a></div>
+        </section>
+    
+            </div>
+        </section>
+    
+        </section>
+    
+        <section class="field-item">
+            
+        <section class="field">
+            <h2 class="field-label">Slot 3</h2>
+            
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value"><span class="literal">Rumored to be Nawfal&#39;s lover</span></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Attract Card?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Can be Empty?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Is Opposing?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Requirements:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Card:</h2>
+            <div class="field-value"><a href="/en/cards/2000568/"><span class="literal">Young Official</span></a></div>
+        </section>
+    
+            </div>
+        </section>
+    
+        </section>
+    
+        <section class="field-item">
+            
+        <section class="field">
+            <h2 class="field-label">Slot 4</h2>
+            
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value"><span class="literal">Nawfal&#39;s bodyguard</span></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Attract Card?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Can be Empty?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Is Opposing?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Requirements:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Card:</h2>
+            <div class="field-value"><a href="/en/cards/2000569/"><span class="literal">Female Bodyguard</span></a></div>
+        </section>
+    
+            </div>
+        </section>
+    
+        </section>
+    
+        <section class="field-item">
+            
+        <section class="field">
+            <h2 class="field-label">Slot 5</h2>
+            
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value"><span class="literal">His advantage will keep accumulating.</span></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Attract Card?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Can be Empty?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Is Opposing?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Requirements:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Type:</h2>
+            <div class="field-value">Item</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Cost:</h2>
+            <div class="field-value">1-999 <a href="/en/tags/lock_16/"><span class="literal">奈费勒的优势</span></a></div>
+        </section>
+    
+            </div>
+        </section>
+    
+        </section>
+    
+        <section class="field-item">
+            
+        <section class="field">
+            <h2 class="field-label">Slot 6</h2>
+            
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value"><span class="literal">Follower</span></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Attract Card?</h2>
+            <div class="field-value">No</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Can be Empty?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Is Opposing?</h2>
+            <div class="field-value">No</div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Requirements:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Type:</h2>
+            <div class="field-value">Character</div>
+        </section>
+    
+            </div>
+        </section>
+    
+        </section>
+    
+        <section class="field-item">
+            
+        <section class="field">
+            <h2 class="field-label">Slot 7</h2>
+            
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value"><span class="literal">Your Troops</span></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Attract Card?</h2>
+            <div class="field-value">No</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Can be Empty?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Is Opposing?</h2>
+            <div class="field-value">No</div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Requirements:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Tag:</h2>
+            <div class="field-value"> <a href="/en/tags/army/"><span class="literal">Troop</span></a></div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Any of:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Type:</h2>
+            <div class="field-value">Item</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Type:</h2>
+            <div class="field-value">Character</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Card:</h2>
+            <div class="field-value"><a href="/en/cards/2000554/"><span class="literal">Reanimated Zombie</span></a></div>
+        </section>
+    
+            </div>
+        </section>
+    
+            </div>
+        </section>
+    
+        </section>
+    
+        <section class="field-item">
+            
+        <section class="field">
+            <h2 class="field-label">Slot 8</h2>
+            
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value"><span class="literal">Follower</span></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Attract Card?</h2>
+            <div class="field-value">No</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Can be Empty?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Is Opposing?</h2>
+            <div class="field-value">No</div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Requirements:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Type:</h2>
+            <div class="field-value">Character</div>
+        </section>
+    
+            </div>
+        </section>
+    
+        </section>
+    
+        <section class="field-item">
+            
+        <section class="field">
+            <h2 class="field-label">Slot 9</h2>
+            
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value"><span class="literal">Consumable to improve abilities.</span></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Attract Card?</h2>
+            <div class="field-value">No</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Can be Empty?</h2>
+            <div class="field-value">Yes</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Is Opposing?</h2>
+            <div class="field-value">No</div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Requirements:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Type:</h2>
+            <div class="field-value">Item</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Cost:</h2>
+            <div class="field-value">1 <a href="/en/tags/consumable/"><span class="literal">Consumable</span></a></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Not Tag:</h2>
+            <div class="field-value"> <a href="/en/tags/coin/"><span class="literal">Gold Coin</span></a></div>
+        </section>
+    
+            </div>
+        </section>
+    
+        </section>
+    
+            </div>
+        </section>
+    
+
+
+        <section class="field field-collection">
+            <h2 class="field-label">Dice Rolls</h2>
+            <div class="field-items">
+                
+        <section class="field-item">
+            
+        <section class="field">
+            <h2 class="field-label">Roll 1</h2>
+            
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value"><span class="literal">Scold opponents, check for spies...</span></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Dice Tip:</h2>
+            <div class="field-value"><span class="literal">The number of dice is affected by opponent&#39;s Stealth and Charisma.</span></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Type:</h2>
+            <div class="field-value">Fight</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Successes Needed:</h2>
+            <div class="field-value"><span class="literal">1</span></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Successes Tip:</h2>
+            <div class="field-value"><span class="literal">You need at least 1 Success to gain something.</span></div>
+        </section>
+    
+        </section>
+    
+            </div>
+        </section>
+    
+
+
+        <section class="field field-collection">
+            <h2 class="field-label">Results</h2>
+            <div class="field-items">
+                
+        <section class="field-item">
+            
+        <section class="field">
+            <h2 class="field-label">Result <span class="literal">1</span></h2>
+            
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Title:</h2>
+            <div class="field-value"><span class="literal">You did not pay attention to his actions.</span></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value"><span class="literal">Whispers of the servants, rumors in the corners of the court, shadows outside the study window... Nawfal&#39;s minions are in action.</span></div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Requirements:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Not Filled:</h2>
+            <div class="field-value">Slot 6</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Not Filled:</h2>
+            <div class="field-value">Slot 7</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Not Filled:</h2>
+            <div class="field-value">Slot 8</div>
+        </section>
+    
+            </div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Actions:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Rite:</h2>
+            <div class="field-value"><a href="/en/rites/5007007/"><span class="literal">Discordance Scheme</span></a></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Event:</h2>
+            <div class="field-value"><a href="/en/events/5320061/"><span class="literal">奈费勒大敌事件-重复阶段</span></a></div>
+        </section>
+    
+            </div>
+        </section>
+    
+        </section>
+    
+        <section class="field-item">
+            
+        <section class="field">
+            <h2 class="field-label">Result <span class="literal">2</span></h2>
+            
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Title:</h2>
+            <div class="field-value"><span class="literal">Got him.</span></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value"><span class="literal">Your spy tailing him found Nawfal&#39;s current residence...</span></div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Requirements:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Roll 1:</h2>
+            <div class="field-value"><a href="/en/tags/conceal/"><span class="literal">Stealth</span></a> + <a href="/en/tags/charm/"><span class="literal">Charisma</span></a> - Opposing(<a href="/en/tags/conceal/"><span class="literal">Stealth</span></a> + <a href="/en/tags/charm/"><span class="literal">Charisma</span></a>) ≥ 5</div>
+        </section>
+    
+            </div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Actions:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Rite:</h2>
+            <div class="field-value"><a href="/en/rites/5007001/"><span class="literal">Against Nawfal</span></a></div>
+        </section>
+    
+            </div>
+        </section>
+    
+        </section>
+    
+        <section class="field-item">
+            
+        <section class="field">
+            <h2 class="field-label">Result <span class="literal">3</span></h2>
+            
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Title:</h2>
+            <div class="field-value"><span class="literal">A Warning</span></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value"><span class="literal">You catch a slave girl attempting to send a secret message to your home. Although she knows little about Nawfal&#39;s plans, you still extract some information using hooks, whips, and branding irons.</span></div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Requirements:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Roll 1:</h2>
+            <div class="field-value"><a href="/en/tags/conceal/"><span class="literal">Stealth</span></a> + <a href="/en/tags/charm/"><span class="literal">Charisma</span></a> - Opposing(<a href="/en/tags/conceal/"><span class="literal">Stealth</span></a> + <a href="/en/tags/charm/"><span class="literal">Charisma</span></a>) ≥ 3</div>
+        </section>
+    
+            </div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Effects:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Counter:</h2>
+            <div class="field-value"><a href="/en/counters/7100003/"><span class="literal">Influence</span></a> +1</div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Remove:</h2>
+            <div class="field-value">Contents of Slot 5</div>
+        </section>
+    
+            </div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Actions:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Event:</h2>
+            <div class="field-value"><a href="/en/events/5320061/"><span class="literal">奈费勒大敌事件-重复阶段</span></a></div>
+        </section>
+    
+            </div>
+        </section>
+    
+        </section>
+    
+        <section class="field-item">
+            
+        <section class="field">
+            <h2 class="field-label">Result <span class="literal">4</span></h2>
+            
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Title:</h2>
+            <div class="field-value"><span class="literal">He failed to succeed.</span></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value"><span class="literal">You found some notes, as well as letters communicating privately with Nawfal, but there is currently no evidence that anyone was truly persuaded by him.</span></div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Requirements:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Roll 1:</h2>
+            <div class="field-value"><a href="/en/tags/conceal/"><span class="literal">Stealth</span></a> + <a href="/en/tags/charm/"><span class="literal">Charisma</span></a> - Opposing(<a href="/en/tags/conceal/"><span class="literal">Stealth</span></a> + <a href="/en/tags/charm/"><span class="literal">Charisma</span></a>) ≥ 1</div>
+        </section>
+    
+            </div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Actions:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Event:</h2>
+            <div class="field-value"><a href="/en/events/5320061/"><span class="literal">奈费勒大敌事件-重复阶段</span></a></div>
+        </section>
+    
+            </div>
+        </section>
+    
+        </section>
+    
+        <section class="field-item">
+            
+        <section class="field">
+            <h2 class="field-label">Result <span class="literal">5</span></h2>
+            
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Title:</h2>
+            <div class="field-value"><span class="literal">You couldn&#39;t stop him...</span></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Text:</h2>
+            <div class="field-value"><span class="literal">Whispers of the servants, rumors in the corners of the court, shadows outside the study window... Nawfal&#39;s minions are in action.</span></div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Requirements:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Roll 1:</h2>
+            <div class="field-value"><a href="/en/tags/conceal/"><span class="literal">Stealth</span></a> + <a href="/en/tags/charm/"><span class="literal">Charisma</span></a> - Opposing(<a href="/en/tags/conceal/"><span class="literal">Stealth</span></a> + <a href="/en/tags/charm/"><span class="literal">Charisma</span></a>) < 1</div>
+        </section>
+    
+            </div>
+        </section>
+    
+        <section class="field field-group">
+            <h2 class="field-label">Actions:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Rite:</h2>
+            <div class="field-value"><a href="/en/rites/5007007/"><span class="literal">Discordance Scheme</span></a></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Event:</h2>
+            <div class="field-value"><a href="/en/events/5320061/"><span class="literal">奈费勒大敌事件-重复阶段</span></a></div>
+        </section>
+    
+            </div>
+        </section>
+    
+        </section>
+    
+            </div>
+        </section>
+    
+
+
+        <section class="field field-group">
+            <h2 class="field-label">Links:</h2>
+            <div class="field-children">
+                
+        <section class="field">
+            <h2 class="field-label">Events:</h2>
+            <div class="field-value"><ul><li><a href="/en/events/5310635/"><span class="literal">大敌的讨伐</span></a></li></ul></div>
+        </section>
+    
+        <section class="field">
+            <h2 class="field-label">Decks:</h2>
+            <div class="field-value"><ul><li><a href="/en/decks/6000090/"><span class="literal">奈费勒大敌事件</span></a></li></ul></div>
+        </section>
+    
+            </div>
+        </section>
+    
+                </div>
+
+            </div>
+
+            
+            <div class="rite-image-container">
+                <img class="rite-image" src="/images/image/rite_2000312.png.png" alt="Divide and Conquer">
+            </div>
+        
+
+        </article>
+    
+                    </div>
+                </main>
+
+            </div>
+
+            <footer class="footer">
+                Sultan's Game and its images and content are copyright of Double Cross. This is an unofficial archive.
+            </footer>
+
+        </body>
+
+        </html>
